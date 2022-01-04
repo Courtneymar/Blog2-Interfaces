@@ -1,0 +1,135 @@
+<! Courtney Marchesi Task 25 Concurrency>
+<head> 
+    <! Link to the StyleSheet>
+    <link href="css/blog.css" rel="stylesheet">
+    <title>Courtney Marchesi Blog 2</title>
+</head>
+
+<! Header Table that has Name, Tagline and an image>
+<table class="header">
+    <br>
+<tbody>
+<tr>
+<td><h1>Courtney Marchesi Blog</h1>
+    <h4>This now exists</h4></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<br>
+<table class="blog">
+<tbody>
+<tr>
+<td><bold>Interfaces</bold></td>
+</tr>
+<tr>
+<td>Interfaces are like blueprints of a class, instead of building the same class over and over again, you can rather use the blueprint to make sure that each class is just the way you designed it.<br>
+Using one then, as a newbie software developer, is not a hard choice. Using an interface can help keep a programme standardised and make sure that the methods and variables declared in the interface are used in each class and are not forgotten by said newbie developer as they learn the ropes.
+    </td>
+</tr>
+</tbody>
+</table>
+<br>
+<table class="blog">
+<tbody>
+<tr>
+<td><bold>Abstract Classes vs Interfaces</bold></td>
+</tr>
+<tr>
+<td>The core differences of abstract classes and interfaces can be found in the table below:
+</td>
+</tr>
+</tbody>
+</table>
+<table class="blog">
+<tbody>
+<tr>
+<td></td><td>Abstract Classes</td><td>Interfaces</td></tr>
+<tr>
+<td>Method</td><td>Abstract Classes can have concrete and abstract methods</td><td>Has abstract methods. SInce Java 8 can have default and static methods</td></tr>
+<tr>
+<td>Inheritance</td><td>Abstract Classes do not have multiple inheritance</td><td>Interfaces support multiple inheritance</td></tr>
+<tr>
+<td>Variables</td><td>Abstract classes have all variable types. e.g final and non final</td><td>Interfaces have only static and final variables</td></tr>
+<tr>
+<td>Implementation</td><td>Abstract Classes can implement an interface</td><td>Interfaces cannot implement any classes</td></tr>
+<tr>
+<td>Keyword</td><td>Uses the 'abstract' keyword</td><td>Uses 'interface' keyword</td></tr>
+<tr>
+<td>Extending</td><td>Abstract classes can extend another Java class and can implement multiple interfaces</td><td>Interfaces can only extend other interfaces</td></tr>
+<tr>
+<td>Access Modifiers</td><td>Abstract classes can have access modifiers like private or protected</td><td>All interfaces are public</td></tr>
+<tr>
+<td>Example</td><td>private abstract class Animal {<br>
+    &nbsp;private abstract void eat();<br>
+    }</td><td>public interface Animal {<br>
+    &nbsp;void eat();<br>
+    }</td></tr>
+</tbody>
+</table>
+<br>
+<table class="blog">
+<tbody>
+<tr>
+<td><bold>Abstraction as a concept</bold></td>
+</tr>
+<tr>
+<td>Abstraction as a concept is the defined as a way to hide the how of your functionality and only get the what of the functionality. Perhaps this is better explained using an example: If you had a programme that converted celcius to farenheit, what the user had to do was input either the degrees in celcius or farenheit and would receive the output in the corresponding alternate degrees. The what of the programme would be the conversion of the given value to the other temperature. But the how of what is done would be completely hidden from the user. The boileroom code that is hidden would be total abstraction</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table class="blog">
+<tbody>
+<tr>
+<td>Using Your New Interface</td>
+</tr>
+<tr>
+<td>Firstly let's get this out of the way, interface cannot be instantiated as they are not classes, nor do they have constructors, the variables declared in an interface are static or final, they can only be those variables. Instead we implement an interface instead. See the below code snippet to see how to create and implement an interface:</td>
+</tr>
+<tr><td><img src="img/interface.JPG" alt="If you images were on you would see the code!" style="width:600px"></td></tr>
+</tbody>
+</table>
+<br>
+<table class="blog">
+<tbody>
+<tr>
+<td>The Method Abstract</td>
+</tr>
+<tr>
+<td>Abstract Methods are methods with out any body. They just have the method signature and then nothing else below. See below code snippet for bit more understanding:</td>
+</tr>
+<tr><td><img src="img/abstract.JPG" alt="If you images were on you would see the code!" style="width:600px"></td></tr>
+</tbody>
+</table>
+<br>
+<table class="blog">
+<tbody>
+<tr>
+<td>Overriding Private Methods in Java</td>
+</tr>
+<tr>
+<td>Like most coding languages, Java is constantly improving and from Java 9 the ability to add private methods and private static methods in interfaces has been possible. This improves code re-use as all classes implementing that interface could share that code, but it wouldnt expose the private method to any of its implementing classes. So while you cant override this method, it greatly helps keep things standard over the entire set of classes needing to use that interface, without you have to override the same method with identical code over all of the classes. <br>
+This also helps with the update of the method, you would only need to change it once in the interface, rather than innummerable times across all the classes</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table class="blog">
+<tbody>
+<tr>
+<td>References</td>
+</tr>
+<tr>
+<td><ul>
+<li>Hyperion Dev, 7 October 2021, SE L3T26 - Interview Prep - Interfaces, viewed again on 4 Jan 2021</li>
+<li>Laurence Williams (Guru99), 1 Jan 2022, Process vs Thread: What&rsquo;s the difference?. <a href="https://www.upgrad.com/blog/types-of-supervised-learning/">https://www.guru99.com/difference-between-process-and-thread.htmlhttps://www.upgrad.com/blog/types-of-supervised-learning/</a> viewed again on 3 Jan 2021</li>
+<li>GeeksgorGeeks, 17 Feb 2021, Interfaces in Java. <a href="https://www.geeksforgeeks.org/interfaces-in-java/">https://www.geeksforgeeks.org/interfaces-in-java/</a> &nbsp;viewed again on 4 Jan 2021</li>
+<li>TutorialsPoint, Date Uknown, How abstraction is achieved using interfaces in Java?. <a href="https://www.tutorialspoint.com/how-abstraction-is-achieved-using-interfaces-in-java">https://www.tutorialspoint.com/how-abstraction-is-achieved-using-interfaces-in-java</a>&nbsp; viewed again on 4 Jan 2021</li>
+<li>Chaitanya Singh (Beginners Book), Date Unknown, Abstract method in Java with examples, <a href="https://beginnersbook.com/2014/01/abstract-method-with-examples-in-java/">https://beginnersbook.com/2014/01/abstract-method-with-examples-in-java/</a>&nbsp; viewed again on 4 Jan 2021</li>
+<li>JavaTPoint, Date Unknown, Difference between abstract class and interface. <a href="https://www.javatpoint.com/difference-between-abstract-class-and-interface">https://www.javatpoint.com/difference-between-abstract-class-and-interface</a> viewed again on 4 Jan 2021</li>
+<li>HowToDoInJava, 26 Dec 2020, Private Methods in Interface &ndash; Java 9. <a href="https://howtodoinjava.com/java9/java9-private-interface-methods/">https://howtodoinjava.com/java9/java9-private-interface-methods/</a> &nbsp;viewed again on 4 Jan 2021</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
